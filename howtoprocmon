@@ -1,0 +1,16 @@
+
+ProcmonConfiguration.pmc - Filter for any Path containing flag.txt
+
+
+Start Trace: 
+Psexec.exe -sd \\computername procmon -accepteula -backingfile c:\proc.pml -quiet -LoadConfig C:\ProcmonConfiguration.pmc
+
+
+
+
+
+Stop Trace:
+Psexec.exe -sd \\computername procmon -accepteula -terminate -quiet
+
+
+Get C:\proc.pml > open in procmon gui. 
